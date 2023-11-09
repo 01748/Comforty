@@ -1,0 +1,47 @@
+.top-categories {
+    margin-top: 80px;
+}
+
+.category-item {
+    height: 424px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    .image img {
+        height: 424px;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+    }
+    .content {
+        background-color: rgba( #000000, 0.7);
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transition: background-color 0.3s ease-in-out;
+        h3 {
+            font-size: 20px;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        small {
+            font-size: 14px;
+            color: white;
+        }
+    }
+    &:hover {
+        .content {
+            background-color: rgba($weightgreen, 0.7);
+        }
+        .image {
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
